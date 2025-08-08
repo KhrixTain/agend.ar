@@ -1,0 +1,35 @@
+{
+  // 🛠 Linting
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    { "mode": "auto" }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // 🎨 Formato
+  "editor.formatOnSave": false, // usamos eslint --fix, no format directo
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
+  // 📄 Archivos
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // ⌨️ Tabs / indentación
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // 📦 TypeScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}

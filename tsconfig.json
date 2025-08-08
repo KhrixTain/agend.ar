@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/shared" },
+    { "path": "packages/domain" },
+    { "path": "packages/application" },
+    { "path": "packages/adapters" },
+    { "path": "apps/api-http" }
+  ]
+}

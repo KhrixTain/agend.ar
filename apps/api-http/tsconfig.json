@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "../../dist/apps/api-http"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../../packages/application" },
+    { "path": "../../packages/adapters" },
+    { "path": "../../packages/domain" },
+    { "path": "../../packages/shared" }
+  ]
+}

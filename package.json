@@ -1,0 +1,43 @@
+{
+  "name": "agend.ar",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/apps/api-http/src/main.js",
+  "type": "module",
+  "private": "true",
+  "scripts": {
+    "dev": "tsx watch --tsconfig apps/api-http/tsconfig.json apps/api-http/src/main.ts",
+    "build": "tsc -b",
+    "clean": "rimraf dist",
+    "start": "node -r tsconfig-paths/register dist/apps/api-http/src/main.js",
+    "typecheck": "tsc -b --pretty false --noEmit",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Christian Maccarino <cmaccarino97@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KhrixTain/agend.ar"
+  },
+  "license": "AGPL-3.0-or-later",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@types/node": "24.2.0",
+    "@typescript-eslint/eslint-plugin": "8.39.0",
+    "@typescript-eslint/parser": "8.39.0",
+    "eslint": "9.32.0",
+    "eslint-config-prettier": "10.1.8",
+    "prettier": "3.6.2",
+    "rimraf": "6.0.1",
+    "tsconfig-paths": "4.2.0",
+    "tsx": "4.20.3",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "17.2.1",
+    "fastify": "5.4.0",
+    "pino": "9.8.0"
+  }
+}

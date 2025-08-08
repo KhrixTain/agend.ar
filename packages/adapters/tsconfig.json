@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "outDir": "../../dist/packages/adapters"
+  },
+  "include": ["**/*.ts"],
+  "references": [
+    { "path": "../application" },
+    { "path": "../domain" },
+    { "path": "../shared" }
+  ]
+}
